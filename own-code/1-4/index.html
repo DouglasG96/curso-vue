@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo vue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(movie, index) in user.movies" :key="index">
+            {{index}} = {{movie}}
+        </li>
+    </ul>
+    <!--
+    <h1 v-if="user.age <= 0 || user.age > 110" class="rango_error">
+        Tu edad esta fuera de rango verificala.
+    </h1>
+    <h1 v-else-if="user.age >=18" class="good">Eres mayor de edad</h1>
+    <h1 v-else class="error">Eres menor de edad</h1>
+    -->
+    <!--
+    <h1 v-if="user.age >= 18" class="good">Eres mayor de edad</h1>
+    <h1 v-else class="error">Eres menor de edad</h1>
+    -->
+    <!--
+    <h1 :class="user.classValue">
+        {{user.age >= 18 ? user.classValue = "good" : user.classValue = "error"}}
+        {{user.title}}
+    </h1>
+    -->
+    <!--
+    <h1>{{user.title}}</h1>
+    <h2>{{user.age < 18 ? "No puedes pasar" : "Puedes Pasar"}}</h2>
+    <hr>
+    <a v-bind:href="user.url" target="_blank">Google</a>
+
+    <hr>
+    <img :src="user.picture" width="300px" height="300px">
+
+    -->
+</div>
+<script src="main.js"></script>
+</body>
+</html>
