@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador App</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app" class="app">
+        <h1 class="title">{{title}}</h1>
+        <hr>
+        <h3 class="count">{{count}}</h3>
+        <hr>
+        <button v-on:click="modCount('dis',1500)">-1</button>
+        <button @click="modCount('',500)">+1</button>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/mountApp.js"></script>
+</body>
+</html>
