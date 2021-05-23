@@ -10,7 +10,7 @@
     <meta name="HandHeldFriendly" content="true" />
     <!--Modificar barra de estado IOS-->
     <meta name="apple-mobile-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" 
+    <meta name="apple-mobile-web-app-status-bar-style"
     content="black-translucent" />
     <!--Iconos-->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png"/>
@@ -18,7 +18,7 @@
     <link rel="apple-touch-startup-image" href="./img/favicon.png"/>
 
     <!--Manifest-->
-    <link rel="manifest" href="./js/manifest.json"/>
+    <link rel="manifest" href="manifest.json"/>
     <!-- Hojas de estilos -->
     <title>Contador App</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -34,6 +34,7 @@
         <button v-on:click="modCount('dis',1500)">-1</button>
         <button @click="modCount('',500)">+1</button>
     </div>
+    <script src="./load.js"></script>
     <script src="js/main.js"></script>
     <script src="js/mountApp.js"></script>
 </body>
